@@ -1,0 +1,26 @@
+# Files
+*.conf
+*.db
+*.db-journal
+*.log
+*.noload
+*.sqlite
+*.txt
+*.xml
+*.json
+.HA_VERSION
+known_devices.yaml
+google_calendars.yaml
+secrets.yaml
+.google.token
+
+# Directories
+icloud
+deps
+www
+.vs
+.git
+
+# Python Caches
+__pycache__
+*.pyc
