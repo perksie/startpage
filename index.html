@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/startPage.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="centered">
+        <!--Date section-->
+        <div class="text-center disable-select" id="weekday"></div>
+        <div class="text-center disable-select" id="date"></div>
+        <div class="text-center disable-select" id="clock"></div>
+        <!-- Search bar -->
+        <div class="row justify-content-center" id="search-bar">
+            <div class="input-group col-md-8">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" onclick="newSearch()"><i class="fa fa-search"></i></button>
+                </span>
+                <input type="text" class="form-control field-box" id="field" placeholder="Search...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdown-btn">
+                        Google
+                    </button>
+                    <div class="dropdown-menu" id="engine-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Link row -->
+        <div class="row justify-content-center disable-select" id="links">
+            <div class="col-md-8 text-center">
+                <!-- New link template:
+            Note: fa-stack enable the stack of multiple icons; fa-circle is the external circle, fa-stack-2x makes the icon bigger, fa-inverse inverts colors
+            <a href="LINK">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa FONT-AWESOME-ICON-NAME fa-stack-1x fa-inverse"></i>
+                </span>
+            </a>
+        -->
+
+                <a href="https://youtube.com">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-youtube fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.reddit.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-reddit-alien fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://store.steampowered.com/">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-steam fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.twitch.tv/directory">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-stack-1x fa-twitch fa-inverse"></i>
+                    </span>
+                </a>
+                <br />
+                <br />
+
+
+            </div>
+            <div class="col-md-8 text-center">
+
+
+                <div class="cardcolumn">
+                    <ul>
+                        <div class="titulo">
+                            Video
+                        </div>
+                        <li>
+                            <a href="https://plex.tv">Plex</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.4:3579">Ombi</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.4:8000">Seafile</a>
+                        </li>
+</div>
+
+
+                <div class="cardcolumn">
+                    <ul>
+                        <div class="titulo">
+                            Social
+                        </div>
+                        <li>
+                            <a href="https://facebook.com">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://reddit.com">Reddit</a>
+                        </li>
+                        <li>
+                            <a href="https://4chan.org">4chan</a>
+                        </li>
+                </div>
+
+                <div class="cardcolumn">
+                    <ul>
+                        <div class="titulo">
+                            News
+                        </div>
+                        <li>
+                            <a href="https://news.google.com">Google News</a>
+                        </li>
+                        <li>
+                            <a href="https://news.com.au">News.com.au</a>
+                        </li>
+                        <li>
+                            <a href="https://itnews.com.au">IT News</a>
+                        </li>
+                </div>
+
+
+                    
+                </div>
+
+                <div class="cardcolumn">
+                    <ul>
+                        <div class="titulo">
+                            Admin
+                        </div>
+                        <li>
+                            <a href="http://192.168.100.40:8081">SickRage</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.40:5050">Couchpotato</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.40:8112">Deluged</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.100:3579">Ombi</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.4:8200">Duplicati</a>
+                        </li>
+                        <li>
+                            <a href="http://192.168.100.2/admin">Pi-Hole</a>
+                        </li>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+  <!-- JQuery, Popper and Bootstrap plugins-->
+    <script src="scripts/jquery-3.2.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/startPage.js"></script>
+</body>
+</html>
